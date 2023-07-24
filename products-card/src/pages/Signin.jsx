@@ -27,6 +27,8 @@ const Signin = () => {
       if (response.data.status) {
         navigate("/home");
         successToast(response.data.message);
+        sessionStorage.setItem('isLoggedIn', true);
+      
       }
     } catch (error) {
       errorToast(error.response.data.message);
@@ -77,7 +79,7 @@ const Signin = () => {
             Submit
           </Button>
 
-          <a href="/signup">Don't have an Account? Sign Up</a>
+          <a href="/">Don't have an Account? Sign Up</a>
         </Form>
       </Card>
     </div>

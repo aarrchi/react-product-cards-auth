@@ -77,7 +77,7 @@ const Signup = () => {
           </Form.Group>
           <Button
             type="submit"
-            className="mt-2 mb-3"
+            className="mt-3 mb-3"
             style={{
               backgroundColor: "#ea4c89",
               width: "100%",
